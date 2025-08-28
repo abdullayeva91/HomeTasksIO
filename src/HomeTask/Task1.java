@@ -14,6 +14,7 @@ public class Task1 {
             Scanner scanner = new Scanner(System.in);
             try(BufferedWriter bw =new BufferedWriter(new FileWriter(file,true))){
                 while (true) {
+                    System.out.println("______TO DO LIST______");
                     System.out.println("Tapsiriq daxil edin");
                     String task= scanner.nextLine();
                     if (task.equalsIgnoreCase("exit")){
@@ -39,6 +40,7 @@ public class Task1 {
             }
             scanner.close();
         } catch (IOException e) {
+            System.out.println("Fayl əməliyyatında xəta baş verdi: " + e.getMessage());
 
         }
 
